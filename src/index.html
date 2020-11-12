@@ -8,25 +8,28 @@
 
     <body>
       <div class="container">
-        <input type="text" class="input-countries">
-        <section class="content">
-        <h1 class="title">Kyiv</h1>
-        <div class="description">
-          <ul class="list-main">
-            <li class="list-main__item">Lorem ipsum dolor sit</li>
-            <li class="list-main__item">Lorem ipsum dolor sit</li>
-            <li class="list-main__item">Lorem ipsum dolor sit
-              <ul class="list-languages">
-                <li class="list-languages__item">Lorem, ipsum.</li>
-                <li class="list-languages__item">Lorem, ipsum.</li>
-                <li class="list-languages__item">Lorem, ipsum.</li>
-              </ul>
-            </li>
-          </ul>
+        <section class="search">
+          <input type="text" placeholder="Enter Country Name" class="input-countries">
+          <div class="drop-down-list js-drop-down-list">            
         </div>
-        <div class="national-flag"></div>
-        
-
+        </section>
+        <section class="content">
+          <h1 class="title">Kyiv</h1>
+          <div class="description">
+            <div class="descriptrion-list">
+            <ul class="list-main">
+              <li class="list-main__item">Capital:</li>
+              <li class="list-main__item">Population:</li>
+              <li class="list-main__item">Languages: 
+                <ul class="list-languages">
+                  <li type="disc" class="list-languages__item">Lorem, ipsum.</li>                
+                </ul>
+              </li>
+            </ul>
+            </div>
+            <div class="description-flag">              
+            </div>
+          </div>
         </section>
       </div>
     </body>
