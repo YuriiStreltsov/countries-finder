@@ -63,7 +63,9 @@ body {
 }
 
 .description-flag {
-  width: 200px;
-  height: 200px;
-  background-color: tomato;
+  width: calc((100% - 30px) / 2);
+  height: 150px;
+  background-clip: padding-box;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
