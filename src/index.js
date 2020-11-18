@@ -20,8 +20,8 @@ inputRef.addEventListener('input', debounce(startSearch, 500));
 dropDown.addEventListener('click', selectionFromSearch);
 
 function startSearch(event) {
-  const resaultQuery = event.target.value;
-  if (!event) {
+  const resaultQuery = event.target.value.trim();
+  if (resaultQuery === '') {
     return;
   }
   render(resaultQuery);
@@ -51,7 +51,6 @@ function render(query) {
       renderHTML(data, contentContainerRef, contentTpl);
     })
     .catch(err => {
-      pushError('Please start typing latin characters');
       console.log(err);
       clearHTML(contentContainerRef);
     });
